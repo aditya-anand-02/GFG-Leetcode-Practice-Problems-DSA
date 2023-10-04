@@ -12,7 +12,7 @@ class Solution {
   public:
     int romanToDecimal(string &s) {
         // code here
-        map<char, int> mpp={{'I',1},{'V',5},{'X',10},{'L',50},{'C',100},{'D',500},{'M',1000}};
+         map<char, int> mpp={{'I',1},{'V',5},{'X',10},{'L',50},{'C',100},{'D',500},{'M',1000}};
         int n=s.length();
         int total=mpp[s[n-1]];
         for(int i=n-2;i>=0;i--)
