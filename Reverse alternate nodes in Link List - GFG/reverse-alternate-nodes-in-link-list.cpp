@@ -99,7 +99,7 @@ class Solution
         Node* evenhead=odd->next;
         Node* oddcurr=oddhead;
         Node* evencurr=evenhead;
-        while(oddcurr && evencurr && evencurr->next)
+        while(oddcurr && evencurr && oddcurr->next && evencurr->next)
         {
             oddcurr->next=evencurr->next;
             oddcurr=oddcurr->next;
